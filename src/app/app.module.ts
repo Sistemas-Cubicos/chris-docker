@@ -1,0 +1,122 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
+import { RouterModule, Routes } from '@angular/router';
+import { EtiquetaBodegaRusticosComponent } from './etiqueta-bodega-rusticos/etiqueta-bodega-rusticos.component';
+import { EtiquetaBodegaComponent } from './etiqueta-bodega-component/etiqueta-bodega.component';
+import {
+  EtiquetaTiendaBatchComponent,
+  EtiquetaTiendaComponent,
+  EtiquetaTiendas2Component,
+  EtiquetaTiendaMilanComponent,
+  EtiquetaTiendaMaryalComponent,
+  EtiquetaTiendaGrandeBatchComponent,
+  EtiquetaTiendaGrandeComponent,
+  EtiquetaTiendaMassiveComponent,
+  EtiquetaTiendaBossaComponent,
+  EtiquetaTiendaBmHome2Component,
+  EtiquetaTiendaBmHomeComponent,
+  EtiquetaTiendaBatchMilanComponent,
+  EtiquetaTiendaBatchMassiveComponent,
+  EtiquetaTiendaCasaMobelComponent,
+  TicketFacturaComponent,
+  TicketFacturaCFDIComponent,
+  TicketFacturaCFDIChicoComponent,
+  TicketFacturaChicoComponent,
+  TicketProduccionComponent,
+  TicketProduccionChicoComponent,
+  TicketReciboComponent,
+  TicketReciboChicoComponent,
+  TicketRetiroComponent,
+  TicketRetiroChicoComponent,
+  TicketCierreCajaComponent,
+  TicketCierreCajaChicoComponent,
+  TicketCotizaComponent,
+  TicketCotizaChicoComponent,
+  TicketDepositoComponent,
+  TicketDepositoChicoComponent,
+  TicketDevolucionComponent,
+  TicketDevolucionChicoComponent,
+  TicketChicoComponent
+
+} from './angular-components-scripts/angular-components-scripts';
+
+const routes: Routes = [
+  { path: 'etiqueta-bodega-rusticos', component: EtiquetaBodegaRusticosComponent },
+  { path: 'etiqueta-bodega', component: EtiquetaBodegaComponent },
+  { path: 'etiqueta-tienda-batch', component: EtiquetaTiendaBatchComponent },
+  { path: 'etiqueta-tienda', component: EtiquetaTiendaComponent },
+  { path: 'etiqueta-tiendas2', component: EtiquetaTiendas2Component },
+  { path: 'etiqueta-tienda-milan', component: EtiquetaTiendaMilanComponent },
+  { path: 'etiqueta-tienda-maryal', component: EtiquetaTiendaMaryalComponent },
+  { path: 'etiqueta-tienda-grande-batch', component: EtiquetaTiendaGrandeBatchComponent },
+  { path: 'ticket-factura', component: TicketFacturaComponent },
+  { path: 'ticket-factura-cfdi', component: TicketFacturaCFDIComponent },
+  { path: 'ticket-factura-cfdi-chico', component: TicketFacturaCFDIChicoComponent },
+  { path: 'ticket-factura-chico', component: TicketFacturaChicoComponent },
+  { path: 'ticket-produccion', component: TicketProduccionComponent },
+  { path: 'ticket-produccion-chico', component: TicketProduccionChicoComponent },
+  { path: 'ticket-recibo', component: TicketReciboComponent },
+  { path: 'ticket-recibo-chico', component: TicketReciboChicoComponent },
+  { path: 'ticket-retiro', component: TicketRetiroComponent },
+  { path: 'ticket-retiro-chico', component: TicketRetiroChicoComponent },
+  { path: 'ticket-cierre-caja', component: TicketCierreCajaComponent },
+  { path: 'ticket-cierre-caja-chico', component: TicketCierreCajaChicoComponent },
+  { path: 'ticket-cotiza', component: TicketCotizaComponent },
+  { path: 'ticket-cotiza-chico', component: TicketCotizaChicoComponent },
+  { path: 'ticket-deposito', component: TicketDepositoComponent },
+  { path: 'ticket-deposito-chico', component: TicketDepositoChicoComponent },
+  { path: 'ticket-devolucion', component: TicketDevolucionComponent },
+  { path: 'ticket-devolucion-chico', component: TicketDevolucionChicoComponent },
+  { path: 'ticket-chico', component: TicketChicoComponent },
+];
+
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    EtiquetaBodegaRusticosComponent,
+    EtiquetaBodegaComponent,
+    EtiquetaTiendaBatchComponent,
+    EtiquetaTiendaComponent,
+    EtiquetaTiendas2Component,
+    EtiquetaTiendaMilanComponent,
+    EtiquetaTiendaMaryalComponent,
+EtiquetaTiendaGrandeBatchComponent,
+EtiquetaTiendaGrandeComponent,
+EtiquetaTiendaMassiveComponent,
+EtiquetaTiendaBossaComponent,
+EtiquetaTiendaBmHome2Component,
+EtiquetaTiendaBmHomeComponent,
+EtiquetaTiendaBatchMilanComponent,
+EtiquetaTiendaBatchMassiveComponent,
+EtiquetaTiendaCasaMobelComponent,
+TicketFacturaComponent,
+TicketFacturaCFDIComponent,
+TicketFacturaCFDIChicoComponent,
+TicketFacturaChicoComponent,
+TicketProduccionComponent,
+TicketProduccionChicoComponent,
+TicketReciboComponent,
+TicketReciboChicoComponent,
+TicketRetiroComponent,
+TicketRetiroChicoComponent,
+TicketCierreCajaComponent,
+TicketCierreCajaChicoComponent,
+TicketCotizaComponent,
+TicketCotizaChicoComponent,
+TicketDepositoComponent,
+TicketDepositoChicoComponent,
+TicketDevolucionComponent,
+TicketDevolucionChicoComponent,
+TicketChicoComponent,
+    
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes)
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  angular8:
+    build: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true

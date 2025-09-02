@@ -1,0 +1,71 @@
+<div *ngIf="mostrar" class="etiqueta-bodega-root">
+  <h1 class="titulo">Etiquetas a imprimir</h1>
+
+
+
+  <div class="etiquetas-scroll">
+
+
+    <div *ngFor="let etiqueta of etiquetas" class="etiqueta-bodega-item">
+      <div class="etiqueta-bodega-row">
+        <img [src]="'assets/img/logo.png'" class="logo" alt="Logo" />
+        <img [src]="'assets/img/qr.png'" class="codigo-barras" alt="Código de Barras" />
+      </div>
+      <div class="etiqueta-bodega-row">
+        <div class="etiqueta-bodega-col">
+          <div>
+            <span class="texto texto2">Fecha Compra:</span>
+            <span class="texto texto1">{{ etiqueta.fechaCompra }}</span>
+          </div>
+          <div>
+            <span class="texto texto2">Fecha Entrega:</span>
+            <span class="texto texto1">{{ etiqueta.fechaEntrega }}</span>
+          </div>
+        </div>
+        <div class="etiqueta-bodega-col">
+          <div>
+            <span class="texto texto2">Serie: </span>
+            <span class="texto texto1">{{ etiqueta.serie }}</span>
+          </div>
+          <div>
+            <span class="texto texto2">Ubicación: </span>
+            <span class="texto texto1">{{ etiqueta.ubicacion }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="etiqueta-bodega-row">
+        <span class="texto texto2">Cliente: </span>
+        <span class="texto texto1">{{ etiqueta.cliente }}</span>
+      </div>
+      <div class="etiqueta-bodega-row">
+        <span class="texto texto2">Folio Venta</span>
+        <span class="texto texto1">{{ etiqueta.folioVenta }}</span>
+        <span class="texto texto2">Clave</span>
+        <span class="texto texto1">{{ etiqueta.clave }}</span>
+      </div>
+      <div class="etiqueta-bodega-row">
+        <span class="texto texto2">Producto:</span>
+        <span class="texto texto1">{{ etiqueta.producto }}</span>
+        <span class="texto texto1 precio">{{ etiqueta.precio }}</span>
+      </div>
+      <div class="etiqueta-bodega-row">
+        <span class="texto texto2">Descripción:</span>
+        <span class="texto texto1">{{ etiqueta.descripcion }}</span>
+      </div>
+      <div class="etiqueta-bodega-row">
+        <span class="texto texto2">Dirección:</span>
+        <span class="texto texto1">{{ etiqueta.direccion }}</span>
+        <img [src]="'assets/img/codigo-barras.png'" class="codigo-barras2" alt="Código de Barras 2" />
+      </div>
+    </div>
+  </div>
+
+  <div class="etiqueta-bodega-actions ">
+    <button (click)="Print()" type="button" class="btn-print">
+      <img src="assets/img/impresora.png" width="25" height="25" border="0" />
+      Imprimir
+    </button>
+    <button class="close-btn" (click)="cerrarModal()">X Cerrar</button>
+
+  </div>
+</div>

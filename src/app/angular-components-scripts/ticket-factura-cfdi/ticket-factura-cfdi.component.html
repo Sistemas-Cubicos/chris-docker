@@ -1,0 +1,84 @@
+<div class="ticket-factura-cfdi-root">
+    <img class="ImagenLogo" [src]="imagenLogo" width="280" height="100" alt="Logo" />
+    <div class="border"><span>ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI</span></div>
+    <span>{{ razonEmpresa }}</span>
+    <span>RFC: {{ rfcEmpresa }}</span>
+    <span>Regimen: {{ regimenEmpresa }}</span>
+    <div class="border"><span>Domicilio Fiscal</span></div>
+    <span>{{ direccionEmpresa }}</span>
+    <span>{{ coloniaEmpresa }}</span>
+    <span>{{ delegacionEmpresa }}</span>
+    <span>{{ estadoEmpresa }}</span>
+    <span>Factura</span>
+    <span>Folio: {{ folio }}</span>
+    <div class="row">
+        <span>Serie: {{ serie }}</span>
+        <span>Folio: {{ folio }}</span>
+    </div>
+    <div class="row">
+        <span>Folio Interno: {{ folioInterno }}</span>
+    </div>
+    <div class="row">
+        <span>Fecha Emisión: {{ fechaEmision }}</span>
+    </div>
+    <div class="row">
+        <span>Fecha Certificación: {{ fechaCertificacion }}</span>
+    </div>
+    <span>Folio Fiscal: {{ folioFiscal }}</span>
+    <span>Certificado: {{ certificado }}</span>
+    <span>Serie Certificado SAT: {{ serieCertificadoSAT }}</span>
+    <div class="row">
+        <span>Tipo Comprobante: {{ tipoComprobante }}</span>
+    </div>
+    <div class="row">
+        <span>Forma de Pago: {{ formaPago }}</span>
+    </div>
+    <div class="row">
+        <span>Metodo de Pago: {{ metodoPago }}</span>
+    </div>
+    <div class="border"><span>Datos del cliente</span></div>
+    <span>{{ razonCliente }}</span>
+    <span>RFC: {{ rfcCliente }}</span>
+    <div class="border"><span>Domicilio Fiscal</span></div>
+    <span>{{ direccionCliente }}</span>
+    <span>{{ coloniaCliente }}</span>
+    <span>{{ delegacionCliente }}</span>
+    <span>{{ estadoCliente }}</span>
+    <div class="border"><span>Lugar de Expedición</span></div>
+    <span>{{ direccionSucursal }}</span>
+    <span>{{ coloniaSucursal }}</span>
+    <span>{{ delegacionSucursal }}</span>
+    <span>{{ estadoSucursal }}</span>
+    <div class="row">
+        <span>{{ cantidad }}</span>
+        <span>{{ modelo }}</span>
+        <span>{{ precio }}</span>
+        <span>{{ total }}</span>
+    </div>
+    <div class="lista">
+        <div class="row" *ngFor="let item of items">
+            <span>{{ item.cantidad }}</span>
+            <span>{{ item.modelo }}</span>
+            <span>{{ item.precio }}</span>
+            <span>{{ item.total }}</span>
+        </div>
+    </div>
+    <div class="row">
+        <span>Subtotal: {{ subtotal }}</span>
+        <span>Descuento: {{ descuento }}</span>
+        <span>IVA: {{ iva }}</span>
+        <span>Retención: {{ retencion }}</span>
+        <span>Total: {{ totalGeneral }}</span>
+    </div>
+    <div class="PanelComentarios">
+        <span>Monto con Letra: {{ montoLetra }}</span>
+    </div>
+    <span>Cadena original complemento de certificación digital del SAT</span>
+    <span>{{ cadenaOriginal }}</span>
+    <span>Sello digital del CFDI</span>
+    <span>{{ selloCFDI }}</span>
+    <span>Sello digital del SAT</span>
+    <span>{{ selloSAT }}</span>
+    <span>ESTE DOCUMENTO ES UNA REPRESENTACIÓN IMPRESA DE UN CFDI</span>
+    <img class="ImagenCodigo" [src]="imagenCodigo" width="100" height="100" alt="Código" />
+</div>

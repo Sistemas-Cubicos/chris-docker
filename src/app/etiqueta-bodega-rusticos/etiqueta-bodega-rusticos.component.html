@@ -1,0 +1,46 @@
+<div class="etiqueta-bodega-rusticos-root">
+    <div class="border-main">
+        <div class="row">
+            <div class="col">
+                <div class="border-img-producto">
+                    <img [src]="imagenProducto || 'assets/icons/sim-producto.png'" alt="Producto"
+                        class="img-producto" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="border-img-logo">
+                    <img [src]="imagenLogo || 'assets/icons/sim-logo.png'" alt="Logo" class="img-logo" />
+                </div>
+                <div class="border-no-pedido">
+                    <span class="texto texto2">{{ noPedidoProveedor }}</span>
+                </div>
+                <div class="border-img-mexico">
+                    <img [src]="imagenMexico || 'assets/icons/EnMexico.png'" alt="México" class="img-mexico" />
+                </div>
+            </div>
+        </div>
+        <div class="border-nombre-producto">
+            <span class="texto texto2 nombre-producto">{{ nombreProducto }}</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="border-img-flecha">
+                    <img [src]="imagenFlechaArriba || 'assets/icons/flecha.png'" alt="Flecha" class="img-flecha" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="border-color">
+                    <span class="texto texto2">{{ color }}</span>
+                </div>
+                <div class="clave-codigo-row">
+                    <span class="texto texto2">{{ clave }}</span>
+                    <img [src]="imagenCodigoBarras || 'assets/icons/sim-codigo.png'" alt="Código de Barras"
+                        class="img-codigo-barras" />
+                </div>
+            </div>
+            <div class="col">
+                <div class="border-vacio"></div>
+            </div>
+        </div>
+    </div>
+</div>

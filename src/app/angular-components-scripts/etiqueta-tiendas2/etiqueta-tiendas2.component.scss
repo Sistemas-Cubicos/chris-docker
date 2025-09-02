@@ -1,0 +1,21 @@
+.etiqueta-tiendas2-root {
+  background: #e3f2fd;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.texto {
+  font-size: 1rem;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .etiqueta-tiendas2-root {
+    padding: 0.5rem;
+    max-width: 98vw;
+  }
+}
