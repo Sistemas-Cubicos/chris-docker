@@ -1,0 +1,51 @@
+ .etiqueta-tienda-batch-massive-root {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.printSurface {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ImagenLogo {
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+}
+
+.CampoProducto, .CampoDescripcion, .CampoPrecio, .CampoDescuento, .CampoPrecioFinal {
+  font-weight: 600;
+  color: #1976d2;
+  margin-left: 8px;
+}
+
+.CampoPrecioFinal {
+  color: #388e3c;
+}
+
+@media (max-width: 600px) {
+  .etiqueta-tienda-batch-massive-root {
+    padding: 0.5rem;
+    max-width: 98vw;
+  }
+  .printSurface {
+    padding: 0.5rem;
+  }
+  .ImagenLogo {
+    width: 120px !important;
+    height: auto !important;
+  }
+}

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./etiqueta-tienda-batch-massive.component.scss']
 })
 export class EtiquetaTiendaBatchMassiveComponent {
-  // TODO: Migrar lógica desde XAML.cs manualmente
-}
+logoUrl = 'assets/logomassiv.png';
+barcodeUrl = 'assets/barcode.png';
+etiqueta = {
+  clave: '12345',
+  precio: '$100.00',
+  producto: 'Producto Demo',
+  descripcion: 'Descripción de ejemplo'
+};}

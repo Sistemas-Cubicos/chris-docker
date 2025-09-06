@@ -1,3 +1,22 @@
-<div class="usercontrol "><div class=""><div class=""><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div></div><div class="grid LayoutRoot"><div class="LoadingEtiquetas"><div class="stackpanel printSurface" style="display:flex; flex-direction:column;"><div class="stackpanel " style="display:flex; flex-direction:row;"><img class="ImagenCodigoBarras" src="" 
-                     width="180" 
-                     height="43" /><div class="canvas MyCanvas" style="position:relative;"></div></div><div class="stackpanel " style="display:flex; flex-direction:row;"><span class="CampoClave">Calve</span><span class="CampoPrecio">Precio</span></div><div class="stackpanel " style="display:flex; flex-direction:row;"><span class="CampoProducto">Producto</span></div><span class="">  </span><div class="stackpanel " style="display:flex; flex-direction:row;"><span class="CampoDescripcion">Descripcion:</span></div></div></div></div></div>
+<div class="usercontrol">
+    <div class="grid LayoutRoot">
+        <div class="LoadingEtiquetas">
+            <div class="stackpanel printSurface" style="display:flex; flex-direction:column;">
+                <div class="stackpanel" style="display:flex; flex-direction:row; align-items:center;">
+                    <img class="ImagenCodigoBarras" [src]="barcodeUrl" width="180" height="43" />
+                    <div class="canvas MyCanvas" style="position:relative;"></div>
+                </div>
+                <div class="stackpanel" style="display:flex; flex-direction:row; margin-top:8px;">
+                    <span class="CampoClave">{{ etiqueta?.clave || 'Clave' }}</span>
+                    <span class="CampoPrecio">{{ etiqueta?.precio || 'Precio' }}</span>
+                </div>
+                <div class="stackpanel" style="display:flex; flex-direction:row; margin-top:8px;">
+                    <span class="CampoProducto">{{ etiqueta?.producto || 'Producto' }}</span>
+                </div>
+                <div class="stackpanel" style="display:flex; flex-direction:row; margin-top:8px;">
+                    <span class="CampoDescripcion">{{ etiqueta?.descripcion || 'Descripcion:' }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

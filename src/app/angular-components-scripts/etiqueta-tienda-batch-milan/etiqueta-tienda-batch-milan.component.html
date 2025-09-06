@@ -1,3 +1,22 @@
-<div class="usercontrol "><div class=""><div class=""><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div></div><div class="grid LayoutRoot"><div class="LoadingEtiquetas"><div class="stackpanel printSurface" style="display:flex; flex-direction:column;"><div class="stackpanel " style="display:flex; flex-direction:row;"><div class="stackpanel " style="display:flex; flex-direction:column;"><img class="ImagenLogo" src="" 
-                     width="215" 
-                     height="40" /></div></div><div class="stackpanel " style="display:flex; flex-direction:row;"><span class="CampoProducto">Producto</span></div><span class="">  </span><div class="stackpanel " style="display:flex; flex-direction:row;"><span class="CampoDescripcion">Descripcion:</span></div><span class="">  </span><div class="stackpanel " style="display:flex; flex-direction:row;"><span class="CampoPrecio">Precio</span></div><span class="">  </span><div class="stackpanel " style="display:flex; flex-direction:row;"><div class="grid "><div class=""><div class=""></div><div class=""></div><div class=""></div><div class=""></div></div><div class=""><div class=""></div></div><span class="">-</span><span class="CampoDescuento">28%</span><span class="">=</span><span class="CampoPrecioFinal">$599.99</span></div></div></div></div></div></div>
+<div class="etiqueta-tienda-batch-milan-root">
+    <div class="printSurface">
+        <div class="row" style="display:flex; flex-direction:row; align-items:center;">
+            <img class="ImagenLogo" [src]="logoUrl" width="215" height="40" alt="Logo" />
+        </div>
+        <div class="row" style="display:flex; flex-direction:row; margin-top:8px;">
+            <span class="CampoProducto">{{ producto }}</span>
+        </div>
+        <div class="row" style="display:flex; flex-direction:row; margin-top:8px;">
+            <span class="CampoDescripcion">{{ descripcion }}</span>
+        </div>
+        <div class="row" style="display:flex; flex-direction:row; margin-top:8px;">
+            <span class="CampoPrecio">{{ precio }}</span>
+        </div>
+        <div class="row" style="display:flex; flex-direction:row; margin-top:8px; align-items:center;">
+            <span>-</span>
+            <span class="CampoDescuento">{{ descuento }}</span>
+            <span>=</span>
+            <span class="CampoPrecioFinal">{{ precioFinal }}</span>
+        </div>
+    </div>
+</div>

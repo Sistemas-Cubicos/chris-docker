@@ -1,0 +1,39 @@
+<div class="usercontrol">
+    <div class="LoadingVentas">
+        <div class="grid LayoutRoot">
+            <div class="stackpanel printSurface" style="display:flex; flex-direction:column;">
+                <div class="stackpanel" style="display:flex; flex-direction:row; align-items:center;">
+                    <img class="ImagenLogo" [src]="logoUrl" width="200" height="100" />
+                    <div class="stackpanel" style="display:flex; flex-direction:column; margin-left: 16px;">
+                        <span>{{ resource.FolioProduccion }}</span>
+                        <span class="CampoFolio">Folio</span>
+                        <span>{{ resource.FechaProduccion }}</span>
+                        <span class="CampoFechaProduccion">Fecha</span>
+                        <span>{{ resource.FechaCompra2 }}</span>
+                        <span class="CampoFechaCompra">Fecha Compra</span>
+                        <span>{{ resource.FechaEntrega }}</span>
+                        <span class="CampoFechaEntrega">Fecha Entrega</span>
+                    </div>
+                </div>
+                <div class="stackpanel PanelCliente" style="display:flex; flex-direction:row; margin-top: 8px;">
+                    <span>{{ resource.Cliente1 }}</span>
+                    <span class="CampoCliente">Cliente</span>
+                </div>
+                <div class="stackpanel" style="display:flex; flex-direction:row; margin-top: 8px;">
+                    <span class="CampoFolioventa">{{ resource.FolioVenta1 }}</span>
+                    <span class="CampoFolioVenta">Folio Venta</span>
+                    <span>{{ resource.Clave }}</span>
+                    <span class="CampoClave">Clave</span>
+                </div>
+                <div class="stackpanel" style="display:flex; flex-direction:row; margin-top: 8px;">
+                    <span>{{ resource.Producto1 }}</span>
+                    <span class="CampoProducto">Producto</span>
+                </div>
+                <div class="stackpanel" style="display:flex; flex-direction:row; margin-top: 8px;">
+                    <span>{{ resource.Descripcion1 }}</span>
+                    <span class="CampoDescripcion">Descripcion:</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
