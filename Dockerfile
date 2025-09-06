@@ -1,21 +1,26 @@
-# Imagen base con Node 12
-FROM node:12
+# Usa una versión de Node compatible con Angular 8.
+# La etiqueta "-alpine" es una versión más ligera de la imagen.
+FROM node:12-alpine
 
-# Carpeta de trabajo
+# Establece la carpeta de trabajo dentro del contenedor.
 WORKDIR /app
 
-# Copiar package.json y lock
+# Copia primero el package.json y package-lock.json.
+# Esto aprovecha el caché de Docker para no reinstalar dependencias si no cambian.
 COPY package*.json ./
 
-# Instalar dependencias
-RUN npm install -g @angular/cli@8.3.29 \
-    && npm install && npm install @angular/router@8 --save
+# Instala las dependencias definidas en package.json.
+# Se asume que @angular/cli y @angular/router ya están en tu package.json.
+# Si no lo están, es mejor añadirlos en tu máquina local y luego reconstruir.
+RUN npm install
 
-# Copiar el resto del proyecto (sin node_modules por el .dockerignore)
+# Ahora, copia el resto de los archivos de tu proyecto.
 COPY . .
 
-# Exponer puerto de Angular
+# Expone el puerto 4200 para que podamos acceder a él desde fuera del contenedor.
 EXPOSE 4200
 
-# Comando por defecto
+# El comando para iniciar la aplicación.
+# Se usa "--host 0.0.0.0" para que el servidor de Angular
+# sea accesible desde fuera del contenedor. Sin esto, solo funcionaría "dentro" de Docker.
 CMD ["npm", "start"]
